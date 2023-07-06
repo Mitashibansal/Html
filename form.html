@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section>
+            <h1> Form for trip</h1>
+            <div>
+                <form action="form.php">
+                    <input type="text" placeholder="Enter your name" id="name" name="name">
+                    <br><br>
+                    <label for="Section A">
+                        <!-- label for and id should be same for clickable text as if you click text it automatics select your radio button -->
+                        <input type="radio" value="Section A" name="radio" id="Section A"> Section A
+                    </label>
+                    <br><br>
+                    <label for="Section B">
+                        <input type="radio" value="Section B" name="radio" id="Section B"> Section B
+                    </label>
+                    <br><br>
+                    <!--  Checkbox can be select multiple even with the same name but radio can be select only one with the same name -->
+                    <label for="Canteen">
+                        <input type="checkbox" placeholder="Food canteen" name="Canteen" id="Canteen"> Canteen</label>
+                    <label for="Canteen_1">
+                        <input type="checkbox" placeholder="Food canteen" name="Canteen" id="Canteen_1">
+                        Canteen_1</label>
+                    <br>
+                    <br>
+                    <label for="file">
+                        <input type="file" accept=".pdf,audio/*" name="file" id="file"></label>
+                    <br><br>
+                    <label for="dtlocal">
+                        <input type="datetime-local" name="dtlocal" id="dtlocal">
+                    </label>
+                    <br><br>
+                    <label for="range">
+                        <input type="range" name="range" id="range">
+                    </label>
+                    <br><br>
+                    <label for="reset">
+                        <input type="reset" name="reset" id="reset">
+                    </label>
+                    <br><br>
+                    <input type="search" name="search" id="search" placeholder="Search">
+                    <input type="submit" name="submit" id="submit">
+                    <br><br>
+                    <label for="Hackathons">
+                        <select name="Hackathons" id="Hackathons"> Hackathons
+                            <option value="1">Smart India Hackathons</option>
+                            <option value="2">India-Africa Hackathons</option>
+                            <option value="default">Select your Hackathon</option>
+                        </select></label>
+                    <br><br>
+                    <label for="textarea">
+                        <textarea name="ta" id="ta" cols="30" rows="10" placeholder="why you want to spend money on this shity trip"></textarea>
+                    </label>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
